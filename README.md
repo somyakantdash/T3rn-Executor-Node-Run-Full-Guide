@@ -1,6 +1,6 @@
 # T3rn-Executor-Node-Run-Full-Guide
 
-### Need Some Requirements for PC Users
+## Need Some Requirements for PC Users
 
 1. For Windows Install WSL - https://learn.microsoft.com/en-us/windows/wsl/install#install-wsl-command
 
@@ -10,7 +10,7 @@ run this command to install Git.
 brew install git
 ```
 
-1🔶 Participate as an Executor
+### Participate as an Executor
 
 Faucet: https://faucet.brn.t3rn.io/
 
