@@ -10,7 +10,7 @@ run this command to install Git.
 brew install git
 ```
 
-### Participate as an Executor
+## Participate as an Executor
 
 Faucet: https://faucet.brn.t3rn.io/
 
