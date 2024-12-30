@@ -10,9 +10,10 @@ run this command to install Git.
 brew install git
 ```
 
-1️⃣ Participate as an Executor
+1🔶 Participate as an Executor
 
 Faucet: https://faucet.brn.t3rn.io/
+
 Bridge: https://bridge.t1rn.io
 
 1️⃣ Dependencies for WINDOWS & LINUX & VPS
@@ -42,7 +43,7 @@ cd executor/executor/bin
 
 For VPS Only
 ```
-screen -S init
+screen -S t3rn
 ```
 
 3️⃣ Set Your Node Environment
@@ -86,7 +87,7 @@ Discord: https://discord.gg/tW9Zqacw
 
 For VPS Only (to check ur node again)
 ```
-screen -r init
+screen -r t3rn
 ```
 PRESS CTRL+A+D
 
