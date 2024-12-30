@@ -85,7 +85,7 @@ PRESS CTRL+A+D (to run ur miner continuously)
 
 Take a screenshot of ur running node and post it on discord to get a Executor Role
 
-Discord: https://discord.gg/tW9Zqacw
+Discord: https://discord.com/invite/9AeZdDuS
 
 For VPS Only (to check ur node again)
 ```
