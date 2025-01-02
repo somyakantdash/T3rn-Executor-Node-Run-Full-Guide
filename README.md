@@ -72,6 +72,9 @@ export PRIVATE_KEY_LOCAL=replace-your-privatekey
 ```
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn'
 ```
+```
+export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-sepolia,l1rn'
+```
 
 7️⃣ Start Node
 ```
@@ -119,6 +122,8 @@ Replace ur (replace-your-privatekey) with ur actual Metamask Wallet Private Key
 ```
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn'
 ```
+```
+export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-sepolia,l1rn'
 ```
 ./executor
 ```
