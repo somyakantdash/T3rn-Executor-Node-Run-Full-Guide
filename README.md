@@ -123,6 +123,20 @@ export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-se
 ./executor
 ```
 
+# Optional Update Node (If u Facing any Issue)
+## 1 Delete Old files
+```
+cd $HOME
+rm -rf executor-linux-${LATEST_VERSION}.tar.gz
+rm -rf executor/executor/bin
+```
 
+**Stop T3rn (Terminate screen for VPS)**
+```console
+screen -XS t3rn quit
+```
+
+## 3 Update and Rerun node
+Start from Step [Install Dria](https://github.com/somyakantdash/T3rn-Executor-Node-Run-Full-Guide/)
 
 
