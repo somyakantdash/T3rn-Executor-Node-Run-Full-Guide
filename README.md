@@ -136,7 +136,7 @@ rm -rf executor/executor/bin
 screen -XS t3rn quit
 ```
 
-## 3 Update and Rerun node
+## 2 Update and Rerun node
 Start from Step [Install Dria](https://github.com/somyakantdash/T3rn-Executor-Node-Run-Full-Guide/)
 
 
