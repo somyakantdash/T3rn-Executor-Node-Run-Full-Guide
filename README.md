@@ -137,6 +137,6 @@ screen -XS t3rn quit
 ```
 
 ## 2 Update and Rerun node
-Start from Step [Install Dria](https://github.com/somyakantdash/T3rn-Executor-Node-Run-Full-Guide/)
+Start from Step [Install T3RN](https://github.com/somyakantdash/T3rn-Executor-Node-Run-Full-Guide/)
 
 
