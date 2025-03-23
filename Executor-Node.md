@@ -2,7 +2,7 @@
 
 ### Offical Docs Guide - https://docs.t3rn.io/executor/become-an-executor/binary-setup
 
-## Executor V1
+## Executor V1 (Already Ended)
 
 Faucet: https://faucet.brn.t3rn.io/
 
@@ -129,7 +129,7 @@ screen -XS t3rn quit
 ### 2 Update and Rerun node
 Start from Step [Install T3RN](https://github.com/somyakantdash/T3rn-Executor-Node-Run-Full-Guide/)
 
-## Executor V2 
+## Executor V2 (Live)
 
 - Faucet(claim BRN in BRN chain faucet): https://faucet.brn.t3rn.io/
 - Bridge(bridge BRN in BRN chain to BRN in Arbitrum Sepolia): https://brn.bridge.caldera.xyz/
