@@ -1,142 +1,29 @@
 # T3rn-Executor-Node-Run-Full-Guide
 
-## Need Some Requirements for PC Users
+## Introduction
+T3rn is a blockchain project enhancing cross-chain interoperability with fast, secure, and cost-efficient solutions. Built on Polkadot, it offers trustless smart contract bridging, reversible transactions, and a testnet with community incentives like BRN tokens. They've raised $7.8M, reserving 50% of tokens for the community.
 
-1. For Windows Install WSL - https://learn.microsoft.com/en-us/windows/wsl/install#install-wsl-command
+## Key Features
+- Fast, Secure, and Cost-Efficient Bridging: Optimizes cross-chain transactions using modular layers for storage, validation, settlement, and consensus.
+- Trustless Execution: Ensures secure, fail-safe smart contract execution across multiple blockchains without intermediaries.
+- Reversible Transactions: Offers a unique fail-safe mechanism, allowing transactions to revert if they fail on any chain, enhancing reliability.
+- Interoperable Smart Contracts: Enables seamless smart contract operation across ecosystems like Polkadot, Ethereum (EVM), and WASM-based chains.
+- Community Incentives: Rewards users, such as Executors, with BRN tokens for facilitating cross-chain transactions on its testnet.
 
-2. For Windows Install Ubuntu after Installing WSL - https://apps.microsoft.com/detail/9PDXGNCFSCZV?hl=en-us&gl=IN&ocid=pdpshare
+## Airdrop Details
+- You can earn BRN points (burnable to redeem TRN at TGE)
+- Reward testnet/mainnet cross-chain participation
+- Cost is Free. Only requires testnet tokens (e.g., test ETH from faucets)
+- Testnet v2 launched in March 20, 2025
+- TGE/mainnet: Planned for 2025 (TBD)
 
-3. For macOS If you have Installed Homebrew (https://brew.sh/) to manage packages on OS X,
-run this command to install Git.
-```
-brew install git
-```
+## Funding 
+T3rn raised $7.85M from investors like Polychain Capital, IOSG Ventures, and Tribe Capital through seed and strategic rounds (including $6.5M in June 2022). Funds support its Polkadot-based interoperability protocol, testnet development, and community incentives, with 50% of BRN tokens allocated to the community.
 
-## Participate as an Executor
+1️⃣ Check: https://cryptorank.io/ico/t-3-rn#funding-rounds
 
-Faucet: https://faucet.brn.t3rn.io/
+2️⃣ Check: https://sosovalue.com/project/t3rn-1844234391928131585
 
-Bridge: https://bridge.t1rn.io
+## Run CLI Node [Check Out](Executor-Node.md)   
 
-1️⃣ Dependencies for WINDOWS & LINUX & VPS
-```
-sudo apt update
-sudo apt upgrade -y
-```
-
-For VPS Only
-```
-apt install screen -y
-```
-
-2️⃣ Download Some Files & Extract
-```
-LATEST_VERSION=$(curl -s https://api.github.com/repos/t3rn/executor-release/releases/latest | grep 'tag_name' | cut -d\" -f4)
-EXECUTOR_URL="https://github.com/t3rn/executor-release/releases/download/${LATEST_VERSION}/executor-linux-${LATEST_VERSION}.tar.gz"
-curl -L -o executor-linux-${LATEST_VERSION}.tar.gz $EXECUTOR_URL
-```
-```
-tar -xzvf executor-linux-${LATEST_VERSION}.tar.gz
-rm -rf executor-linux-${LATEST_VERSION}.tar.gz
-```
-```
-cd executor/executor/bin
-```
-
-For VPS Only
-```
-screen -S t3rn
-```
-
-3️⃣ Set Your Node Environment
-```
-export NODE_ENV=testnet
-```
-
-4️⃣ Set Your Log Settings
-```
-export LOG_LEVEL=debug
-export LOG_PRETTY=false
-export EXECUTOR_PROCESS_ORDERS=true
-export EXECUTOR_PROCESS_CLAIMS=true
-export EXECUTOR_MAX_L3_GAS_PRICE=50
-export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
-```
-
-5️⃣ Set Your Private Key [Replace ur (replace-your-privatekey) with ur actual Metamask Wallet Private Key]
-```
-export PRIVATE_KEY_LOCAL=replace-your-privatekey
-```
-
-6️⃣ Set Your Networks
-```
-export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-sepolia,l1rn'
-```
-
-7️⃣ Start Node
-```
-./executor
-```
-
-For VPS Only
-```
-PRESS CTRL+A+D (to run ur miner continuously)
-```
-
-Take a screenshot of ur running node and post it on discord to get a Executor Role
-
-Discord: https://discord.com/invite/9AeZdDuS
-
-For VPS Only (to check ur node again)
-```
-screen -r t3rn
-```
-PRESS CTRL+A+D
-
-## 🔶For Next Day Run This Command (Windows)
-
-#1 Open WSL and Put this Command 
-```
-cd executor/executor/bin
-```
-```
-export NODE_ENV=testnet
-```
-```
-export LOG_LEVEL=debug
-export LOG_PRETTY=false
-export EXECUTOR_PROCESS_ORDERS=true
-export EXECUTOR_PROCESS_CLAIMS=true
-export EXECUTOR_MAX_L3_GAS_PRICE=50
-export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
-```
-```
-export PRIVATE_KEY_LOCAL=replace-your-privatekey
-```
-
-Replace ur (replace-your-privatekey) with ur actual Metamask Wallet Private Key
-
-```
-export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-sepolia,l1rn'
-```
-```
-./executor
-```
-
-# Optional Update Node (If u Facing any Issue)
-## 1 Delete Old files
-```
-cd $HOME
-rm -rf executor-linux-${LATEST_VERSION}.tar.gz
-rm -rf executor/executor/bin
-```
-
-**Stop T3rn (Terminate screen for VPS)**
-```console
-screen -XS t3rn quit
-```
-
-## 2 Update and Rerun node
-Start from Step [Install T3RN](https://github.com/somyakantdash/T3rn-Executor-Node-Run-Full-Guide/)
-
-
+[System Requiremnets](system-requirements.md)
